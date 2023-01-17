@@ -38,6 +38,22 @@ def compileCpp(Cpp_file):
                 os.system(exe)
 
 
+def runCppEXE(filepath):
+        fileName = filepath.split('.')[0]
+        exe = fileName+'.exe'
+        os.system(exe)
+
+
+def findComments(fileLocation):
+    containt = ''
+    with open(fileLocation, 'r') as file:
+        for line in file.readlines():
+            if '//' in line: 
+                containt += line.replace('\n', '')
+            
+    return containt
+
 ###################################### CALL THE PROGRAM ########################################
 
-compileCpp('A:/BIOINFORMAICS/C++_programs/test_code.cpp')
+# compileCpp('A:/BIOINFORMAICS/C++_programs/test_code.cpp')
+# runCppEXE('A:/BIOINFORMAICS/C++_programs/test_code.cpp')

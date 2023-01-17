@@ -15,8 +15,9 @@ int main(){
     // finding length of an array
     int sizeofarr = sizeof(arr);
     int length = sizeofarr/sizeof(int);
-    cout << "Index of a value in an array: " << Index(arr, 84, length) <<endl;
+    cout << "**Index of a value in an array: " << Index(arr, 84, length) <<endl;
     cout << "median: " << Median(arr, length) <<endl;
     cout << "exponential: " << expX(0);
+    cout << "after push: ";
     return 0;
 }
