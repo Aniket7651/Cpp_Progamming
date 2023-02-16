@@ -54,6 +54,6 @@ def findComments(fileLocation):
     return containt
 
 ###################################### CALL THE PROGRAM ########################################
-
+print('hello python!!!')
 # compileCpp('A:/BIOINFORMAICS/C++_programs/test_code.cpp')
 # runCppEXE('A:/BIOINFORMAICS/C++_programs/test_code.cpp')

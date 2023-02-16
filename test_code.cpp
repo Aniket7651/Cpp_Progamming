@@ -5,6 +5,7 @@ compiled as for_Cpp_py.exe
 #include"userlibC++/statistics.h"
 #include"userlibC++/struc++.h"
 #include<iostream>
+#include<cstdlib>
 using namespace std;
 
 // driver function.....
@@ -15,9 +16,13 @@ int main(){
     // finding length of an array
     int sizeofarr = sizeof(arr);
     int length = sizeofarr/sizeof(int);
-    cout << "**Index of a value in an array: " << Index(arr, 84, length) <<endl;
-    cout << "median: " << Median(arr, length) <<endl;
-    cout << "exponential: " << expX(0);
-    cout << "after push: ";
+    // cout << "**Index of a value in an array: " << Index(arr, 84, length) <<endl;
+    // cout << "median: " << Median(arr, length) <<endl;
+    // cout << "exponential: " << expX(0);
+    // cout << "after push: ";
+    
+    // running python file from C++ file
+    int res = system("python testcpp.py");
+    cout << res;
     return 0;
 }

@@ -15,9 +15,3 @@ int Index(int arr[], int value, int size){
     }
     return index;
 }
-
-int push(int arr[], int value, int size){
-    for (int i=0; i<size; i++){
-        
-    }
-}
